@@ -2,7 +2,7 @@
 
 An interactive tool for visualizing representation similarities in Stable Diffusion models. Supports multiple SD models, similarity measures, and custom image uploads (local version).
 
-🔗 Live Demo: [sd-similarities.jloos.de](https://sd-similarities.jloos.de)
+🔗 Live Demo: [sd-similarities.jloos.de](https://sd-similarities.jloos.de)  
 🚀 Run Locally: See setup instructions below.
 
 To use the tool, select one or more images to analyze. Now, hover over the images or similarity maps to show the similarities to the token at the current cursor position. For a good first example of interesting semantic correspondences, select two images that contain a human or animal and hover over the position of an eye. For further exploration change the SD model, the block (U-Net position), the similarity measure, and the noise level.
@@ -41,7 +41,7 @@ python app.py
 python app.py prod
 ```
 
-go to http://localhost:5000
+then go to http://localhost:5000
 
 
 ## Docker
