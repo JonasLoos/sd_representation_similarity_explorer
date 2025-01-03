@@ -1,0 +1,558 @@
+[
+  {
+    "short": "SD1.5",
+    "name": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "guidance_scale": 7.5,
+    "representations": {
+      "conv_in": {
+        "channels": 320,
+        "spatial": 64
+      },
+      "down_blocks[0]": {
+        "channels": 320,
+        "spatial": 32
+      },
+      "down_blocks[1]": {
+        "channels": 640,
+        "spatial": 16
+      },
+      "down_blocks[2]": {
+        "channels": 1280,
+        "spatial": 8
+      },
+      "down_blocks[3]": {
+        "channels": 1280,
+        "spatial": 8
+      },
+      "mid_block": {
+        "channels": 1280,
+        "spatial": 8
+      },
+      "up_blocks[0]": {
+        "channels": 1280,
+        "spatial": 16
+      },
+      "up_blocks[1]": {
+        "channels": 1280,
+        "spatial": 32
+      },
+      "up_blocks[2]": {
+        "channels": 640,
+        "spatial": 64
+      },
+      "up_blocks[3]": {
+        "channels": 320,
+        "spatial": 64
+      },
+      "conv_out": {
+        "channels": 4,
+        "spatial": 64
+      }
+    },
+    "default_image_shape": [
+      3,
+      512,
+      512
+    ]
+  },
+  {
+    "short": "SD2.1",
+    "name": "stabilityai/stable-diffusion-2-1",
+    "guidance_scale": 7.5,
+    "representations": {
+      "conv_in": {
+        "channels": 320,
+        "spatial": 96
+      },
+      "down_blocks[0]": {
+        "channels": 320,
+        "spatial": 48
+      },
+      "down_blocks[1]": {
+        "channels": 640,
+        "spatial": 24
+      },
+      "down_blocks[2]": {
+        "channels": 1280,
+        "spatial": 12
+      },
+      "down_blocks[3]": {
+        "channels": 1280,
+        "spatial": 12
+      },
+      "mid_block": {
+        "channels": 1280,
+        "spatial": 12
+      },
+      "up_blocks[0]": {
+        "channels": 1280,
+        "spatial": 24
+      },
+      "up_blocks[1]": {
+        "channels": 1280,
+        "spatial": 48
+      },
+      "up_blocks[2]": {
+        "channels": 640,
+        "spatial": 96
+      },
+      "up_blocks[3]": {
+        "channels": 320,
+        "spatial": 96
+      },
+      "conv_out": {
+        "channels": 4,
+        "spatial": 96
+      }
+    },
+    "default_image_shape": [
+      3,
+      768,
+      768
+    ]
+  },
+  {
+    "short": "SD-Turbo",
+    "name": "stabilityai/sd-turbo",
+    "guidance_scale": 0.0,
+    "representations": {
+      "conv_in": {
+        "channels": 320,
+        "spatial": 64
+      },
+      "down_blocks[0]": {
+        "channels": 320,
+        "spatial": 32
+      },
+      "down_blocks[1]": {
+        "channels": 640,
+        "spatial": 16
+      },
+      "down_blocks[2]": {
+        "channels": 1280,
+        "spatial": 8
+      },
+      "down_blocks[3]": {
+        "channels": 1280,
+        "spatial": 8
+      },
+      "mid_block": {
+        "channels": 1280,
+        "spatial": 8
+      },
+      "up_blocks[0]": {
+        "channels": 1280,
+        "spatial": 16
+      },
+      "up_blocks[1]": {
+        "channels": 1280,
+        "spatial": 32
+      },
+      "up_blocks[2]": {
+        "channels": 640,
+        "spatial": 64
+      },
+      "up_blocks[3]": {
+        "channels": 320,
+        "spatial": 64
+      },
+      "conv_out": {
+        "channels": 4,
+        "spatial": 64
+      }
+    },
+    "default_image_shape": [
+      3,
+      512,
+      512
+    ]
+  },
+  {
+    "short": "SDXL",
+    "name": "stabilityai/stable-diffusion-xl-base-1.0",
+    "guidance_scale": 5.0,
+    "representations": {
+      "conv_in": {
+        "channels": 320,
+        "spatial": 128
+      },
+      "down_blocks[0]": {
+        "channels": 320,
+        "spatial": 64
+      },
+      "down_blocks[1]": {
+        "channels": 640,
+        "spatial": 32
+      },
+      "down_blocks[2]": {
+        "channels": 1280,
+        "spatial": 32
+      },
+      "mid_block": {
+        "channels": 1280,
+        "spatial": 32
+      },
+      "up_blocks[0]": {
+        "channels": 1280,
+        "spatial": 64
+      },
+      "up_blocks[1]": {
+        "channels": 640,
+        "spatial": 128
+      },
+      "up_blocks[2]": {
+        "channels": 320,
+        "spatial": 128
+      },
+      "conv_out": {
+        "channels": 4,
+        "spatial": 128
+      }
+    },
+    "default_image_shape": [
+      3,
+      1024,
+      1024
+    ]
+  },
+  {
+    "short": "SDXL-Turbo",
+    "name": "stabilityai/sdxl-turbo",
+    "guidance_scale": 0.0,
+    "representations": {
+      "conv_in": {
+        "channels": 320,
+        "spatial": 64
+      },
+      "down_blocks[0]": {
+        "channels": 320,
+        "spatial": 32
+      },
+      "down_blocks[1]": {
+        "channels": 640,
+        "spatial": 16
+      },
+      "down_blocks[2]": {
+        "channels": 1280,
+        "spatial": 16
+      },
+      "mid_block": {
+        "channels": 1280,
+        "spatial": 16
+      },
+      "up_blocks[0]": {
+        "channels": 1280,
+        "spatial": 32
+      },
+      "up_blocks[1]": {
+        "channels": 640,
+        "spatial": 64
+      },
+      "up_blocks[2]": {
+        "channels": 320,
+        "spatial": 64
+      },
+      "conv_out": {
+        "channels": 4,
+        "spatial": 64
+      }
+    },
+    "default_image_shape": [
+      3,
+      512,
+      512
+    ]
+  },
+  {
+    "short": "SDXL-Lightning-1step",
+    "name": "ByteDance/sdxl-lightning-1step",
+    "guidance_scale": 0.0,
+    "representations": {
+      "conv_in": {
+        "channels": 320,
+        "spatial": 128
+      },
+      "down_blocks[0]": {
+        "channels": 320,
+        "spatial": 64
+      },
+      "down_blocks[1]": {
+        "channels": 640,
+        "spatial": 32
+      },
+      "down_blocks[2]": {
+        "channels": 1280,
+        "spatial": 32
+      },
+      "mid_block": {
+        "channels": 1280,
+        "spatial": 32
+      },
+      "up_blocks[0]": {
+        "channels": 1280,
+        "spatial": 64
+      },
+      "up_blocks[1]": {
+        "channels": 640,
+        "spatial": 128
+      },
+      "up_blocks[2]": {
+        "channels": 320,
+        "spatial": 128
+      },
+      "conv_out": {
+        "channels": 4,
+        "spatial": 128
+      }
+    },
+    "default_image_shape": [
+      3,
+      1024,
+      1024
+    ]
+  },
+  {
+    "short": "SDXL-Lightning-4step",
+    "name": "ByteDance/sdxl-lightning-4step",
+    "guidance_scale": 0.0,
+    "representations": {
+      "conv_in": {
+        "channels": 320,
+        "spatial": 128
+      },
+      "down_blocks[0]": {
+        "channels": 320,
+        "spatial": 64
+      },
+      "down_blocks[1]": {
+        "channels": 640,
+        "spatial": 32
+      },
+      "down_blocks[2]": {
+        "channels": 1280,
+        "spatial": 32
+      },
+      "mid_block": {
+        "channels": 1280,
+        "spatial": 32
+      },
+      "up_blocks[0]": {
+        "channels": 1280,
+        "spatial": 64
+      },
+      "up_blocks[1]": {
+        "channels": 640,
+        "spatial": 128
+      },
+      "up_blocks[2]": {
+        "channels": 320,
+        "spatial": 128
+      },
+      "conv_out": {
+        "channels": 4,
+        "spatial": 128
+      }
+    },
+    "default_image_shape": [
+      3,
+      1024,
+      1024
+    ]
+  },
+  {
+    "short": "SD3",
+    "name": "stabilityai/stable-diffusion-3-medium-diffusers",
+    "guidance_scale": 7.0,
+    "representations": {
+      "transformer_blocks[0]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[1]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[2]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[3]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[4]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[5]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[6]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[7]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[8]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[9]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[10]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[11]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[12]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[13]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[14]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[15]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[16]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[17]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[18]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[19]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[20]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[21]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[22]": {
+        "channels": 1536,
+        "spatial": 64
+      },
+      "transformer_blocks[23]": {
+        "channels": 1536,
+        "spatial": 64
+      }
+    },
+    "default_image_shape": [
+      3,
+      1024,
+      1024
+    ]
+  },
+  {
+    "short": "FLUX-schnell",
+    "name": "black-forest-labs/FLUX.1-schnell",
+    "guidance_scale": 0.0,
+    "representations": {
+      "transformer_blocks[0]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[1]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[2]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[3]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[4]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[5]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[6]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[7]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[8]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[9]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[10]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[11]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[12]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[13]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[14]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[15]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[16]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[17]": {
+        "channels": 3072,
+        "spatial": 64
+      },
+      "transformer_blocks[18]": {
+        "channels": 3072,
+        "spatial": 64
+      }
+    },
+    "default_image_shape": [
+      3,
+      1024,
+      1024
+    ]
+  }
+]

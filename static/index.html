@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Representation similarity explorer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="intro">
+    <h1 style="text-align: center;">Representation similarity explorer</h1>
+    <p>
+      This is a simple tool to explore the similarity between the representations of different concepts at different spatial positions in the unet of diffusion models.
+    </p>
+    <div class="select-container">
+      <div class="select-group">
+        <span>Model:</span>
+        <select id="model-to-use"></select>
+      </div>
+      <div class="select-group">
+        <span>Position:</span>
+        <select id="position-to-use"></select>
+      </div>
+      <div class="select-group">
+        <span>Similarity measure:</span>
+        <select id="similarity-measure">
+          <option value="cosine">Cosine</option>
+          <option value="cosine_centered">Cosine (centered)</option>
+          <!-- <option value="soft_cosine">Soft Cosine</option> -->
+          <option value="dot-product">Dot Product</option>
+          <option value="manhattan">Manhattan (L1)</option>
+          <option value="euclidean">Euclidean (L2)</option>
+          <option value="chebyshev">Chebyshev (L∞)</option>
+          <option value="rel-l2-norm">Relative L2 Norm</option>
+        </select>
+      </div>
+    </div>    
+    <p id="model-description">
+    </p>
+    <p>
+      All displayed similarities are relative to the currently hovered, or last clicked, tile.
+    </p>
+  </div>
+  <div id="canvas-container">
+    <p id="canvas-introduction">Select or upload an image to explore its representations.</p>
+  </div>
+  <div id="existing-images-section">
+    <h3>Available Images</h3>
+    <div id="existing-images-container"></div>
+  </div>
+  <div id="upload-section">
+    <h3>Upload Custom Image</h3>
+    <div id="file-drop-area">
+      <p>Click to select or drag and drop an image here</p>
+      <input type="file" id="image-upload" accept=".png,.jpg,.jpeg" class="hidden">
+      <div id="file-upload-error" class="hidden">Failed to upload image.</div>
+    </div>
+  </div>
+  <footer>
+    <p style="text-align: center;">Made by <a href="https://github.com/JonasLoos">Jonas Loos</a> in 2024.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

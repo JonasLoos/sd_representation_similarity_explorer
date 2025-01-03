@@ -1,0 +1,8 @@
+Flask==3.0.3
+Flask-CORS==5.0.0
+waitress==3.0.0
+numpy==1.26.4
+Pillow==10.4.0
+accelerate==0.34.2
+torch==2.4.1
+sdhelper==1.0.0
