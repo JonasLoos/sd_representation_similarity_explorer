@@ -61,7 +61,7 @@ docker run -p 5000:5000 representation-similarity-explorer
 
 ## Additional Information
 
-This project is based on the [h-space-similarity-explorer](https://github.com/JonasLoos/h-space-similarity-explorer) and was developed as part of my master thesis at TU Berlin.
+This project is based on the [h-space-similarity-explorer](https://github.com/JonasLoos/h-space-similarity-explorer) and was developed as part of [my master thesis](https://github.com/JonasLoos/thesis) at TU Berlin.
 
 Architecturally, the representation similarity explorer is split into a Flask-based backend that computes the representations for uploaded images using the `sdhelper` package (https://github.com/JonasLoos/sdhelper) and a simple frontend built with HTML, CSS, and JavaScript. To improve the performance and interactivity, an asynchronous webworker in Rust, that computes the shown similarities in the browser in real time, is used.
 
