@@ -1,3 +1,6 @@
+> [!NOTE]
+> Check out the related paper: [jonasloos.github.io/sd-representation-anomalies](https://jonasloos.github.io/sd-representation-anomalies)
+
 # Representation similarity explorer
 
 An interactive tool for visualizing representation similarities in Stable Diffusion models. Supports multiple SD models, similarity measures, and custom image uploads (local version).
