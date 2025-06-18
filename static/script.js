@@ -238,7 +238,7 @@ function drawGrid(ctx) {
 
 // draw the similarity matrix
 function drawSimilarities({ tile_ctx, text }, similarities) {
-  const { n, m } = current_model.getShapes();
+  const { n } = current_model.getShapes();
   const tile_size = tile_ctx.canvas.width / n;
   const { width, height } = tile_ctx.canvas;
   tile_ctx.clearRect(0, 0, width, height);
@@ -439,21 +439,30 @@ function getMousePos(canvas, event) {
 
 
 // Upload an image to the server
-async function uploadImage(file) {
-  document.getElementById('file-upload-error').classList.add('hidden');
-  try {
-    if (!file) throw new Error('No file selected.');
-    const formData = new FormData();
-    formData.append('file', file);
-    const response = await fetch('/upload_image', {method: 'POST', body: formData});
-    const data = await response.json();
-    if (data.status !== 'success') throw new Error(`Failed to upload image: ${data.msg}`);
-    await getCachedImages();
-    concepts.push(setupConcept(data.filename));
-  } catch (error) {
-    console.warn('Unknown error while uploading image:', error);
-    document.getElementById('file-upload-error').classList.remove('hidden');
+function uploadImage(file) {
+  const file_upload_error = document.getElementById('file-upload-error');
+  file_upload_error.classList.add('hidden');
+
+  if (!file) {
+    file_upload_error.classList.remove('hidden');
+    console.warn('Error while uploading image: No file selected.');
+    return;
   }
+
+  const formData = new FormData();
+  formData.append('file', file);
+
+  fetch('/upload_image', { method: 'POST', body: formData })
+  .then(response => response.json())
+  .then(data => {
+    if (data.status !== 'success') throw new Error(`Failed to upload image: ${data.msg}`);
+    return data;
+  })
+  .then(data => getCachedImages().then(() => concepts.push(setupConcept(data.filename))))
+  .catch(error => {
+    console.warn('Unknown error while uploading image:', error);
+    file_upload_error.classList.remove('hidden');
+  });
 }
 
 
@@ -602,7 +611,7 @@ function init() {
   // upload image
   dropArea.addEventListener('drop', e => uploadImage(e.dataTransfer.files[0]), false);
   dropArea.addEventListener('click', () => fileInput.click());
-  fileInput.addEventListener('change', (e) => uploadImage(e.target.files[0]));
+  fileInput.addEventListener('change', e => uploadImage(e.target.files[0]));
 }
 
 
